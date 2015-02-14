@@ -57,7 +57,6 @@ def bellman(s):
 		rew_a = reward_a[new_a] # Set rewards of getting to new state
 		rew_b = reward_b[new_b]
 		temp += prob_a * prob_b * (rew_a + rew_b + gamma * get_value(a, b)) # Sum the component of Bellman
-
 def poisson(expected, n):
 	return (expected**n)*(e**(-expected))/(factorial(n)) # Evaluates Poisson random variable
 
