@@ -33,7 +33,7 @@ def policy_evaluation(): # Iterate the Bellman equation, done in place
 
 def policy_improvement():
 	for s in range(num_states + 1):
-		b = policy[s]
+		b = policy[s];
 		policy[s] = 2
 		if b != policy[s]:
 			return False # policy_stable set to false
